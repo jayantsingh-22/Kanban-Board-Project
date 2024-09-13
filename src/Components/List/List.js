@@ -134,7 +134,13 @@ export default function List({
             }
 
             if (shouldRenderCard) {
-              return <Card key={ticket.id} cardDetails={ticket} />;
+              return (
+                <Card
+                  key={ticket.id}
+                  cardDetails={ticket}
+                  groupValue={groupValue}
+                />
+              );
             }
             return null;
           })}
