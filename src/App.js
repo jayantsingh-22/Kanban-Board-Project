@@ -47,7 +47,7 @@ function App() {
           }
         });
       }
-      await setTicketDetails(cardsArry);
+      setTicketDetails(cardsArry);
     },
     [orderValue, setTicketDetails]
   );
@@ -88,7 +88,7 @@ function App() {
             }
           }
         }
-      await setTicketDetails(ticketArray)
+      setTicketDetails(ticketArray)
       orderDataByValue(ticketArray)
     }
     
